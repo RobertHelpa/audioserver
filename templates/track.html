@@ -9,5 +9,8 @@
     <audio src="{{ url_for('static', path='/tracks/+track) }}", controls>
         Track is no availble
     </audio>
+    <form method="post" action="/tracks/delete/{track_id}">
+        <input type="submit" value="X">
+    </form>
 </body>
 </html>
